@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Linel Almonte</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+<!--Front Page Area with search bar and icon-->
+<div class="flex">
+    <h1 class="chester">Chester Tourist</h1>
+    <form>
+        <input type="search" placeholder="Search"name="search">
+        <img src="./images/magnifying-glass-solid.svg" alt="magnifying-glass-solid" width="24px" class="magnifying-glass">
+    </form>
+</div>
+
+<!--Navigation Area-->
+<nav>
+    <ul class="sidebar">
+        <li class="home" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30" class="close-button"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"></path></svg><a href="#"></a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">Shopping</a></li>
+        <li><a href="#">Restaurants</a></li>
+        <li><a href="./entertainment.html" target="_blank" class="second-page">Entertainment</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Visiting</a></li>
+        <li><img src="./images/menu-bar.png" alt="menu" width="45px" id="menu-toggle"></li>
+    </ul>
+
+    <ul class="nav-menu">
+        <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="#">Shopping</a></li>
+        <li class="hideOnMobile"><a href="#">Restaurants</a></li>
+        <li class="hideOnMobile"><a href="./entertainment.html" target="_blank" class="second-page">Entertainment</a></li>
+        <li class="hideOnMobile"><a href="#">Contact</a></li>
+        <li class="hideOnMobile"><a href="#">Visiting</a></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 96 960 960" width="50"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"></path></svg></a></li>
+    </ul>
+
+</nav>
+
+<!--Header Area-->
+<header>
+   <div class="title head-img">
+    <!--Title and Description Area Here -->
+     <h2 class="h2-1">Explore the Historic City of <span class="color">Chester</span></h2>
+     <p class="p-1 header-p">Dive into the rich heritage of Chester, where ancient walls meet modern vibrancy. Explore iconic landmarks, quaint shops, and delightful dining options as you wander through one of England's most picturesque cities. Whether you're a history buff or a casual visitor, Chester offers a unique blend of the past and present, making every stroll a journey through time.</p>
+   </div>
+</header>
+
+
+<!--Section 1-->
+<section class="container-1">
+<!--Title and Description Area Here -->
+<div class="area1 ">
+    <h3 class="fnt">Choose Your <span class="color">Destination</span> and Travel Date</h3>
+    <p class="p-tag">Select your desired destination and travel date to tailor your adventure. Whether you're planning a weekend getaway or a longer escape, our easy-to-use options help you set up the perfect trip.</p>
+</div>
+
+<!--Choose your destination-->
+<div class="area2">
+    <div class="icon-text-container">
+        <img src="./images/location-dot-solid (1).svg" alt="location dot icon" width="30px" class="icon">
+        <h3 class="fnt-area">Choose your destination</h3>
+        <form>
+            <input type="text" placeholder="12 Abbey Square, Chester CH1 2HU" class="form-input">
+        </form>
+    </div>
+
+<!--When will it start?-->
+    <div class="icon-text-container">
+        <img src="./images/calendar-days-regular.svg" alt="calendar icon" width="37px" class="icon">
+        <h3 class="fnt-area">When it will start?</h3>
+        <form>
+            <input type="date" class="form-input">
+        </form>
+    </div>
+
+<!--How many people?-->
+    <div class="icon-text-container">
+        <img src="./images/people-group-solid (1).svg" alt="group people icon" width="50px" class="icon">
+        <h3 class="fnt-area">How many people?</h3>
+        <form>
+            <input type="number" placeholder="Number of people" min="1" class="form-input">
+        </form>
+    </div>
+
+<!--Check out date-->
+    <div class="icon-text-container">
+        <h3 class="fnt-area">When it will end?</h3>
+        <form>
+            <input type="date" class="form-input">
+        </form>
+    </div>
+    <button class="btn">Search</button> <!--Search Button -->
+</div> 
+</section>
+
+
+<!--Section 2 -->
+<section class="area3">
+
+<!--Title Area -->
+<div class="title-section">
+    <!--Title and Description Area Here -->
+     <h3 class="title-3">Discover <span class="color">Chester’s</span> Must-See Highlights</h3>
+     <p class="p-3">Embark on a journey through the charming streets of Chester, where history and modernity blend seamlessly. From its ancient Roman walls to picturesque Tudor-style buildings, Chester offers a captivating array of attractions waiting to be explored. Stroll through the vibrant Rows, marvel at the grandeur of Chester Cathedral, and unwind along the serene River Dee. Whether you're a history buff, a nature enthusiast, or a lover of unique shopping and dining experiences, Chester’s must-see highlights promise unforgettable moments for every traveler.</p>
+</div>
+
+
+<div class="container-area"> <!--Container -->
+    <!--Chester Zoo -->
+    <div class="card">  
+    <h4 class="title-card">Chester Zoo</h4>
+    <img src="./images/chester-zoo.jpg" alt="child looking at alligator"  class="imgs-3">
+    <p class="p-3">Discover one of the UK’s most renowned zoos, home to over 20,000 animals. A perfect day out for families and animal lovers alike.</p>
+    <button>Learn More</button> <!--Button Area -->
+</div>  
+
+<!--Historic Chester Walls -->
+<div class="card">
+     <h4 class="title-card">Historic Chester Walls</h4>
+     <img src="./images/walls.jpg" alt="chester walls"  class="imgs-3">
+     <p class="p-3">Explore the ancient city walls that have stood the test of time. Enjoy panoramic views of Chester and stroll along these historic fortifications.</p>
+     <button>Learn More</button> <!--Button Area -->
+</div>
+
+<!--Grosvenor Museum -->
+<div class="card">
+    <h4 class="title-card">Grosvenor Museum</h4>
+    <img src="./images/mus.jpg" alt="Museum" class="imgs-3">
+    <p class="p-3">Marvel at the stunning Gothic architecture of Chester Cathedral. Experience its serene atmosphere and rich history.</p>
+    <button>Learn More</button> <!--Button Area -->
+</div>
+</div>
+</section>
+
+
+
+<!--Section 3 -->
+<div class="title-4"> 
+<!--Title Area -->
+    <h4 class="title-card4">Immerse yourself in Chester’s most iconic landmarks and experiences. From historic sites to popular spots, discover what makes each attraction special and find out what you shouldn’t miss during your visit.</h4>
+</div>
+<section class="area4">
+    <div class="container-area">
+
+    <!--The Rows -->
+        <div class="card">  
+            <h4 class="title-card"> The Rows</h4>
+            <img src="./images/img 2.jpg" alt="child looking at alligator"  class="imgs-3">
+             <p class="p-3">Step back in time with Chester’s unique medieval shopping galleries. Enjoy a blend of history and modern retail therapy.</p>
+             <button>Learn More</button> <!--Button Area -->
+        </div>  
+        
+        
+        <!--Roman Amphitheatre -->
+        <div class="card">
+             <h4 class="title-card">Roman Amphitheatre</h4>
+             <img src="./images/img 1.webp" alt="chester walls"  class="imgs-3">
+             <p class="p-3">Witness the remnants of Chester’s Roman past at the amphitheatre, where gladiatorial contests and public events once took place.</p>
+             <button>Learn More</button> <!--Button Area -->
+        </div>
+        
+
+        <!--Chester Cathedral -->
+        <div class="card">
+            <h4 class="title-card">Chester Cathedral</h4>
+            <img src="./images/img 4.webp" alt="Museum" class="imgs-3">
+            <p class="p-3">Marvel at the stunning Gothic architecture of Chester Cathedral. Experience its serene atmosphere and rich history.</p>
+            <button>Learn More</button> <!--Button Area -->
+        </div>
+</div>
+</section>
+
+<!--Footer Area -->
+<footer>
+    <div class="footer-container">
+      <!-- Explore Section -->
+      <div class="footer-section">
+        <h3 class="footer-fnt">Explore</h3>
+        <ul>
+          <li><a href="#">Hotels</a></li>
+          <li><a href="#">Guest Houses</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Parking</a></li>
+          <li><a href="#">Visiting</a></li>
+          <li><a href="#">Shopping</a></li>
+          <li><a href="#">Pubs</a></li>
+        </ul>
+        
+        <!-- Follow Us Section -->
+        <h3 class="footer-fnt space">Follow Us</h3>
+        <!--Social media icons area-->
+        <ul class="social-icons">
+          <li><img src="./images/facebook-brands-solid.svg" alt="Facebook Icon"></a></li>
+          <li><img src="./images/instagram-brands-solid.svg" alt="Instagram Icon"></a></li>
+          <li><img src="./images/x-twitter-brands-solid.svg" alt="Twitter Icon"></a></li>
+          <li><img src="./images/youtube-brands-solid.svg" alt="Youtube Icon"></a></li>
+        </ul>
+      </div>
+  
+      <!-- Policy & Legal Section -->
+      <div class="footer-section">
+        <h3 class="footer-fnt">Policy & Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+  
+      <!-- Company & Support Section -->
+      <div class="footer-section">
+        <h3 class="footer-fnt">Company & Support</h3>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+</footer>
+
+
+ <!-- Javascript -->
+<script>
+    
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  
+</script>
+
+
+
+
+
+
+</body>
+</html>
